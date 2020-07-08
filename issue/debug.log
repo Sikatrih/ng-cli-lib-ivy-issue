@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@6.14.4
+3 info using node@v12.16.2
+4 verbose npm-session 0914aea9eb62e37b
+5 verbose publish [ '.' ]
+6 info lifecycle my-lib@0.0.1~prepublish: my-lib@0.0.1
+7 info lifecycle my-lib@0.0.1~prepare: my-lib@0.0.1
+8 info lifecycle my-lib@0.0.1~prepublishOnly: my-lib@0.0.1
+9 verbose lifecycle my-lib@0.0.1~prepublishOnly: unsafe-perm in lifecycle true
+10 verbose lifecycle my-lib@0.0.1~prepublishOnly: PATH: /usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/aa/work/test/ng-cli-lib-ivy-issue/dist/my-lib/node_modules/.bin:/usr/local/cuda-8.0/bin:/home/aa/bin:/home/aa/.local/bin:/usr/local/cuda-8.0/bin:/home/aa/bin:/home/aa/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/android/sdk/tools/:/usr/local/android/sdk/platform-tools/:/usr/local/android/sdk/tools/:/usr/local/android/sdk/platform-tools/
+11 verbose lifecycle my-lib@0.0.1~prepublishOnly: CWD: .
+12 silly lifecycle my-lib@0.0.1~prepublishOnly: Args: [
+12 silly lifecycle   '-c',
+12 silly lifecycle   `node --eval "console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')" && exit 1`
+12 silly lifecycle ]
+13 silly lifecycle my-lib@0.0.1~prepublishOnly: Returned: code: 1  signal: null
+14 info lifecycle my-lib@0.0.1~prepublishOnly: Failed to exec prepublishOnly script
+15 verbose stack Error: my-lib@0.0.1 prepublishOnly: `node --eval "console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\n')" && exit 1`
+15 verbose stack Exit status 1
+15 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+15 verbose stack     at EventEmitter.emit (events.js:310:20)
+15 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+15 verbose stack     at ChildProcess.emit (events.js:310:20)
+15 verbose stack     at maybeClose (internal/child_process.js:1021:16)
+15 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:286:5)
+16 verbose pkgid my-lib@0.0.1
+17 verbose cwd /home/aa/work/test/ng-cli-lib-ivy-issue/dist/my-lib
+18 verbose Linux 4.4.0-184-generic
+19 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+20 verbose node v12.16.2
+21 verbose npm  v6.14.4
+22 error code ELIFECYCLE
+23 error errno 1
+24 error my-lib@0.0.1 prepublishOnly: `node --eval "console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\n')" && exit 1`
+24 error Exit status 1
+25 error Failed at the my-lib@0.0.1 prepublishOnly script.
+25 error This is probably not a problem with npm. There is likely additional logging output above.
+26 verbose exit [ 1, true ]
